@@ -1,16 +1,17 @@
 * {
     font-family: "JetBrains Mono";
-    font-size: 20px;
+    font-size: 15px;
     min-height: 0;
 }
 
 window#waybar {
     background: transparent;
-    background-color: #000000;
-    opacity: 0.7;
-    color: #dedede; /* overlay0 */
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    color: black;
     transition-property: background-color;
     transition-duration: 0.1s;
+    border-radius: 30px;
 }
 
 window#waybar.hidden {
@@ -39,13 +40,15 @@ button {
 }
 
 button:hover {
-    background: inherit;
-    color: #cba6f7; /* mauve */
-    border-top: 2px solid #cba6f7;
+    background: white;
 }
 
 #workspaces button {
-    padding: 0 4px;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: solid white 1px;
 }
 
 #workspaces button.focused {
@@ -55,8 +58,8 @@ button:hover {
 }
 
 #workspaces button.active {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #ffffff; /* mauve */
+    background-color: rgba(255, 255, 255, 1);
+    color: black; /* mauve */
     border-bottom: 2px solid #ffffff;
 }
 
@@ -65,14 +68,26 @@ button:hover {
 }
 
 #clock {
-    margin-top: 2px;
-    margin-bottom: 2px;
-    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px 7px 5px 7px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#cpu {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 4px;
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #pulseaudio,
 #battery,
-#cpu,
 #memory,
 #disk,
 #temperature,
@@ -82,20 +97,12 @@ button:hover {
 #network,
 #mode,
 #scratchpad {
-    margin-top: 2px;
-    margin-bottom: 2px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     margin-left: 4px;
     margin-right: 4px;
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
-}
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
 }

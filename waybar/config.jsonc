@@ -1,48 +1,70 @@
-{
-    "position": "top",
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["clock"],
-    "modules-right": ["network", "pulseaudio", "battery", "cpu"],
-    "clock": {
-        "format": "{:%A  %H:%M  %d %B }",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    },
-    "battery": {
-        "states": {
-            "warning": 30,
-            "critical": 15,
+[
+    {
+        "position": "top",
+        "output": "DP-1",
+        "modules-left": ["hyprland/workspaces"],
+        "height": 30,
+        "margin-left": 15,
+        "margin-right": 15,
+        "margin-top": 5,
+        "margin-bottom": 5,
+        "modules-center": ["clock"],
+        "spacing": 6,
+        "modules-right": ["network", "pulseaudio", "battery", "cpu"],
+        "clock": {
+            "format": "{:%I:%M %p | %A, %d %B}",
+            "tooltip": false,
         },
-        "format": "<span size='13000' foreground='#a6e3a1'>{icon} </span> {capacity}%",
-        "format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}%",
-        "format-critical": "<span size='13000' foreground='#E38C8F'>{icon} </span> {capacity}%",
-        "format-charging": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-        "format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-        "format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
-        "format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-        "format-icons": ["", "", "", "", ""],
-        "tooltip-format": "{time}",
-    },
-    "network": {
-        "interface": "eno1",
-        "format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid}",
-        "format-ethernet": "<span size='13000' foreground='#f5e0dc'>\uef44 </span>Wired",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
-        "tooltip-format-wifi": "Signal Strenght: {signalStrength}%",
-        "tooltip-format-ethernet": "{ipaddr}",
-    },
-    "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-muted": "",
-        "format-icons": {
-            "default": ["", "", " "],
+        "battery": {
+            "states": {
+                "warning": 30,
+                "critical": 15,
+            },
+            "format": "<span size='13000' foreground='#a6e3a1'>{icon} </span> {capacity}%",
+            "format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}%",
+            "format-critical": "<span size='13000' foreground='#E38C8F'>{icon} </span> {capacity}%",
+            "format-charging": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+            "format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+            "format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
+            "format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+            "format-icons": ["", "", "", "", ""],
+            "tooltip-format": "{time}",
         },
-        "on-click": "pavucontrol",
+        "network": {
+            "interface": "eno1",
+            "format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid}",
+            "format-ethernet": "<span size='13000' foreground='#000000'>\uef44 </span>Wired",
+            "format-linked": "{ifname} (No IP) ",
+            "format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
+            "tooltip-format-wifi": "Signal Strenght: {signalStrength}%",
+            "tooltip-format-ethernet": "{ipaddr}",
+        },
+        "pulseaudio": {
+            "format": "{icon} {volume}%",
+            "format-muted": "",
+            "format-icons": {
+                "default": ["", "", " "],
+            },
+            "on-click": "pavucontrol",
+        },
+        "tray": {
+            "format": "f00af",
+        },
+        "cpu": {
+            "format": "CPU: {usage}%",
+        },
     },
-    "tray": {
-        "format": "f00af",
+
+    {
+        "position": "top",
+        "output": "HDMI-A-1",
+        "modules-left": ["hyprland/workspaces"],
+        "spacing": 6,
     },
-    "cpu": {
-        "format": "CPU: {usage}%",
+    {
+        "position": "top",
+        "output": "DP-2",
+        "modules-left": ["hyprland/workspaces"],
+        "spacing": 6,
     },
-}
+]
