@@ -33,7 +33,7 @@
         "network": {
             "interface": "eno1",
             "format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid}",
-            "format-ethernet": "<span size='13000' foreground='#000000'>\uef44 </span>Wired",
+            "format-ethernet": "<span size='13000' foreground='#9f5364'>\uef44 </span>Wired",
             "format-linked": "{ifname} (No IP) ",
             "format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
             "tooltip-format-wifi": "Signal Strenght: {signalStrength}%",

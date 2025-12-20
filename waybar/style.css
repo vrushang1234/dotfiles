@@ -1,6 +1,6 @@
 * {
     font-family: "JetBrains Mono";
-    font-size: 15px;
+    font-size: 18px;
     min-height: 0;
 }
 
@@ -48,19 +48,18 @@ button:hover {
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 10px;
-    border: solid white 1px;
+    border: solid #9f5364 1px;
+    color: rgba(159, 83, 100, 1);
 }
 
 #workspaces button.focused {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #f5e0dc; /* rosewater */
-    border-top: 2px solid #f5e0dc;
+    color: rgba(159, 83, 100, 1);
+    background-color: white;
 }
 
 #workspaces button.active {
-    background-color: rgba(255, 255, 255, 1);
-    color: black; /* mauve */
-    border-bottom: 2px solid #ffffff;
+    color: white;
+    background-color: rgba(18, 18, 18, 0.7);
 }
 
 #workspaces button.urgent {
@@ -72,11 +71,14 @@ button:hover {
     margin-bottom: 5px;
     padding: 5px 7px 5px 7px;
     border-radius: 10px;
-    background-color: white;
+    color: rgba(159, 83, 100, 1);
+    background-color: rgba(18, 18, 18, 0.7);
+    border: solid #9f5364 1px;
 }
 
 #cpu {
-    background-color: white;
+    color: rgba(159, 83, 100, 1);
+    background-color: rgba(18, 18, 18, 0.7);
     border-radius: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -84,6 +86,7 @@ button:hover {
     margin-right: 15px;
     padding-left: 15px;
     padding-right: 15px;
+    border: solid #9f5364 1px;
 }
 
 #pulseaudio,
@@ -97,7 +100,8 @@ button:hover {
 #network,
 #mode,
 #scratchpad {
-    background-color: white;
+    color: rgba(159, 83, 100, 1);
+    background-color: rgba(18, 18, 18, 0.7);
     border-radius: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -105,4 +109,5 @@ button:hover {
     margin-right: 4px;
     padding-left: 15px;
     padding-right: 15px;
+    border: solid #9f5364 1px;
 }
