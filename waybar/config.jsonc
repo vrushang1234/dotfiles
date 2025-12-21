@@ -9,6 +9,7 @@
         "margin-top": 5,
         "margin-bottom": 5,
         "modules-center": ["clock"],
+        "on-sigusr1": "hide",
         "spacing": 6,
         "modules-right": ["network", "pulseaudio", "battery", "cpu"],
         "clock": {
