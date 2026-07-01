@@ -6,7 +6,7 @@
 
  configuration{
   display-drun: "Apps";
-  font: "JetBrains Mono Light 20";
+  font: "Adwaita Sans light 22";
   show-icons:true;
   drun-display-format: "{icon} {name}";
   icon-theme: "Papirus";
