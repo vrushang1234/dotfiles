@@ -48,18 +48,18 @@ button:hover {
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 10px;
-    border: solid #9f5364 1px;
-    color: rgba(159, 83, 100, 1);
+    border: solid #fd659c 1.3px;
+    color: white;
 }
 
 #workspaces button.focused {
-    color: rgba(159, 83, 100, 1);
+    color: white;
     background-color: white;
 }
 
 #workspaces button.active {
     color: white;
-    background-color: rgba(18, 18, 18, 0.7);
+    background-color: rgba(18, 18, 18, 0.9);
 }
 
 #workspaces button.urgent {
@@ -71,14 +71,14 @@ button:hover {
     margin-bottom: 5px;
     padding: 5px 7px 5px 7px;
     border-radius: 10px;
-    color: rgba(159, 83, 100, 1);
-    background-color: rgba(18, 18, 18, 0.7);
-    border: solid #9f5364 1px;
+    color: white;
+    background-color: rgba(18, 18, 18, 0.9);
+    border: solid #fd659c 1.3px;
 }
 
 #cpu {
-    color: rgba(159, 83, 100, 1);
-    background-color: rgba(18, 18, 18, 0.7);
+    color: white;
+    background-color: rgba(18, 18, 18, 0.9);
     border-radius: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -86,7 +86,7 @@ button:hover {
     margin-right: 15px;
     padding-left: 15px;
     padding-right: 15px;
-    border: solid #9f5364 1px;
+    border: solid #fd659c 1.3px;
 }
 
 #pulseaudio,
@@ -100,8 +100,8 @@ button:hover {
 #network,
 #mode,
 #scratchpad {
-    color: rgba(159, 83, 100, 1);
-    background-color: rgba(18, 18, 18, 0.7);
+    color: white;
+    background-color: rgba(18, 18, 18, 0.9);
     border-radius: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -109,5 +109,5 @@ button:hover {
     margin-right: 4px;
     padding-left: 15px;
     padding-right: 15px;
-    border: solid #9f5364 1px;
+    border: solid #fd659c 1.3px;
 }

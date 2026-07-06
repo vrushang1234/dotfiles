@@ -1,0 +1,105 @@
+blankwindow {
+  background: transparent;
+}
+
+.floating-notifications {
+  background: transparent;
+}
+
+notificationwindow {
+  background: transparent;
+}
+
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 14px;
+}
+
+.control-center {
+  background: rgba(20, 20, 28, 0.92);
+  border-radius: 16px;
+  padding: 12px;
+}
+
+.notification {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 14px;
+  margin: 8px;
+  border: ridge #fd659c 1.3px;
+}
+
+.notification-content {
+  padding: 8px;
+}
+
+.summary {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.body {
+  color: #cdd6f4;
+}
+
+.time {
+  color: #a6adc8;
+  font-size: 12px;
+}
+
+.close-button {
+  background: transparent;
+  color: #fd659c;
+  border-radius: 100%;
+  margin-right: 12px;
+  margin-top: 12px;
+}
+
+.close-button:hover {
+  background: #fd659c;
+  color: white;
+}
+
+.control-center .notification-row {
+  margin: 6px 0;
+}
+
+.widget-title {
+  color: #ffffff;
+  font-weight: bold;
+  margin: 8px;
+}
+
+.widget-title > button {
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 6px 10px;
+}
+
+.widget-dnd {
+  margin: 8px;
+  padding: 8px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.widget-dnd > switch {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+}
+
+.widget-dnd > switch:checked {
+  background: #89b4fa;
+}
+
+window,
+.background,
+blankwindow,
+notificationwindow,
+.floating-notifications,
+.floating-notifications.background,
+.notification-row,
+.notification-background {
+  background: transparent !important;
+  background-color: transparent !important;
+}
